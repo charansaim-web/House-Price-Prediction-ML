@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Price Prediction</title>
+</head>
+<body>
+
+<h1>House Price Prediction</h1>
+
+<form method="POST">
+
+    <label>Lot Frontage</label><br>
+    <input type="number" name="lot_frontage" required><br><br>
+
+    <label>Lot Area</label><br>
+    <input type="number" name="lot_area" required><br><br>
+
+    <label>Overall Quality</label><br>
+    <input type="number" name="overall_qual" required><br><br>
+
+    <label>Year Built</label><br>
+    <input type="number" name="year_built" required><br><br>
+
+    <label>Year Remod/Add</label><br>
+    <input type="number" name="year_remod" required><br><br>
+
+    <label>Mas Vnr Area</label><br>
+    <input type="number" name="mas_vnr_area" required><br><br>
+
+    <label>1st Floor SF</label><br>
+    <input type="number" name="first_flr" required><br><br>
+
+    <label>Gr Liv Area</label><br>
+    <input type="number" name="gr_liv_area" required><br><br>
+
+    <label>Garage Cars</label><br>
+    <input type="number" name="garage_cars" required><br><br>
+
+    <label>Garage Area</label><br>
+    <input type="number" name="garage_area" required><br><br>
+
+    <input type="submit" value="Predict">
+
+</form>
+
+{% if prediction %}
+<h2>Predicted House Price: {{ prediction }}</h2>
+{% endif %}
+
+</body>
+</html>
